@@ -123,19 +123,19 @@ Different statistical metrics like T-tests, trees, box plot,… will be used  in
 
 
 ## Proposed timeline : 
-17.11.23 : project milestone 2
-24.11.23 : end of that collection and initial organisation
-01.12.23 : visualisation of results
-08.11.23 : quantification of error and uncertainty of the results
-15.11.23 : end of the code
-22.11.23 : end of website (project milestone 3)
+* 17.11.23 : project milestone 2
+* 24.11.23 : end of that collection and initial organisation
+* 01.12.23 : visualisation of results
+* 08.11.23 : quantification of error and uncertainty of the results
+* 15.11.23 : end of the code
+* 22.11.23 : end of website (project milestone 3)
 
 ## Organisation within the team :
 Mainly organized in group of two for each task
-Nils : data collection, data organisation
-Mirco : data collection, Statistical analysis
-Romain : Statistical analysis, website
-Lucas : website, Data visualisation 
-Justin : Data visualisation, Data organisation
+* Nils : data collection, data organisation
+* Mirco : data collection, Statistical analysis
+* Romain : Statistical analysis, website
+* Lucas : website, Data visualisation 
+* Justin : Data visualisation, Data organisation
 
 ## -Questions for TAs (optional) :
