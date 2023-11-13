@@ -138,4 +138,4 @@ Mainly organized in group of two for each task
 * Lucas : website, Data visualisation 
 * Justin : Data visualisation, Data organisation
 
-## -Questions for TAs (optional) :
+## Questions for TAs (optional) :
