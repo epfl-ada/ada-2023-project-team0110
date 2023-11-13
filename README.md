@@ -115,9 +115,9 @@ Two distinct notebooks will be created to enhance readability : one for the data
 
 Many python libraries will be used in order to perform the data collection and analyses :
 
-Pandas
-Wikimapper
-…
+* Pandas
+* Wikimapper
+* …
 
 Different statistical metrics like T-tests, trees, box plot,… will be used  in order to study the data, visualise it and quantify the uncertainty.  
 
