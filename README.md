@@ -132,10 +132,10 @@ Different statistical metrics like T-tests, trees, box plot,… will be used  in
 
 ## Organisation within the team :
 Mainly organized in group of two for each task
-* Nils : data collection, data organisation
-* Mirco : data collection, Statistical analysis
-* Romain : Statistical analysis, website
-* Lucas : website, Data visualisation 
-* Justin : Data visualisation, Data organisation
+* **Nils** : data collection, data organisation
+* **Mirco** : data collection, Statistical analysis
+* **Romain** : Statistical analysis, website
+* **Lucas** : website, Data visualisation 
+* **Justin** : Data visualisation, Data organisation
 
 ## Questions for TAs (optional) :
