@@ -84,3 +84,58 @@ Project ideas :
   8) Animals on Youtube : what animal would be the best youtuber ?
   9) Politics : impact of presidential elections in the US (Trump/Clinton in 2017) on the videos, assessing popularity of candidates thanks to the videos.
   10) Could Youtube remplace school ? : analyze the education/vulgaristation videos, what subject is the most present ? Can I become enginer on Youtube ? What job can I get from Youtube (backer, cooker)? 
+
+# Milestone 2
+
+**From Book to Motion Picture**
+
+## Title : 
+What makes a book adaptation a good movie ?
+
+## Abstract : 
+Deciding the Next Book-to-Film Adaptation Filmmakers have long turned to literature for creative inspiration, with iconic films like James Bond and "The Shining" having their roots in books. The idea would be to study the common points between the adaptations through history. 
+
+## Research questions : 
+* Are there specific genres that lend themselves more easily to cinematic adaptation? 
+* Do shorter or longer books result in better movies? 
+* Is it more advantageous to adapt a standalone book or an entire series, as was the case with Harry Potter? 
+* Do movies based on a books enjoy stronger box office sales? 
+* Do movies based on widely-read books also enjoy strong box office sales? 
+* What is the ideal time frame between a book's publication and its film adaptation? 
+* Should the actors that are playing a role in the movie have a big popularity?
+* Is it possible to predict if a movie adaptation will gain people’s heart?
+
+## Proposed additional dataset :
+The CMU movie summary corpus dataset contains 42306 movies with informations like release dates, duration, genre and actors. The dataset is easily readable by the computers of the team. In order to get more informations on the success of the different movies, the IMDb scoring is added to the dataset by using an existing python function. Informations on the adapted books (if the movies is an adaptation) are also added with Wikidata thank to the wikiID and the Query Service (that uses SPARQL). Here again, the informations like release dates, number of page, genre, author or series belonging are of interest. That way, the characteristics of the book can be compared and linked to the one of the movie and its final success. Adding all these informations don’t give any issue about the size of the dataset as the first stage has been to remove all the movies that were not coming from a book ( our dataset contains now around 4000 movies).
+
+## Methods :
+
+As informations (on box office mainly) on many old movies are missing, the dataset may need to be narrowed down to films before a certain release date. 
+Two distinct notebooks will be created to enhance readability : one for the data collection and one for the analysis.
+
+Many python libraries will be used in order to perform the data collection and analyses :
+
+Pandas
+Wikimapper
+…
+
+Different statistical metrics like T-tests, trees, box plot,… will be used  in order to study the data, visualise it and quantify the uncertainty.  
+
+
+## Proposed timeline : 
+17.11.23 : project milestone 2
+24.11.23 : end of that collection and initial organisation
+01.12.23 : visualisation of results
+08.11.23 : quantification of error and uncertainty of the results
+15.11.23 : end of the code
+22.11.23 : end of website (project milestone 3)
+
+## Organisation within the team :
+Mainly organized in group of two for each task
+Nils : data collection, data organisation
+Mirco : data collection, Statistical analysis
+Romain : Statistical analysis, website
+Lucas : website, Data visualisation 
+Justin : Data visualisation, Data organisation
+
+## -Questions for TAs (optional) :
