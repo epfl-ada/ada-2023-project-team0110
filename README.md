@@ -90,7 +90,7 @@ Project ideas :
 **From Book to Motion Picture**
 
 ## Title : 
-What makes a book adaptation a good movie ?
+**What makes a book adaptation a good movie ?**
 
 ## Abstract : 
 Deciding the Next Book-to-Film Adaptation Filmmakers have long turned to literature for creative inspiration, with iconic films like James Bond and "The Shining" having their roots in books. The idea would be to study the common points between the adaptations through history. 
