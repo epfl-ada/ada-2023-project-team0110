@@ -22,21 +22,33 @@ To address these inquiries, we will analyze data from the [CMU Movie Summary Cor
 
 ## Research questions :
 Intro :  **Why should a movie director adapt a novel into a movie ?**
-    * Do movies based on books enjoy stronger box office sales?
-    * How different are the audiences of book adaptation compared to original idea movies ?
+
+
+* Do movies based on books enjoy stronger box office sales?
+* How different are the audiences of book adaptation compared to original idea movies ?
+
 
 I) **Which novels are more likely to be successful in adaptation ?**
-    * Are there specific genres of novel that lend themselves more easily to cinematic adaptation? 
-    * What is the ideal time frame between a book's publication and its film adaptation? 
-    * How does the popularity of the author affects the success of the adaptation ?
-    * Is it more advantageous to adapt a standalone book or an entire series, as was the case with Harry Potter? 
+
+
+* Are there specific genres of novel that lend themselves more easily to cinematic adaptation? 
+* What is the ideal time frame between a book's publication and its film adaptation? 
+* How does the popularity of the author affects the success of the adaptation ?
+* Is it more advantageous to adapt a standalone book or an entire series, as was the case with Harry Potter? 
+
 
 II) **What is the best way to adapt a novel into a movie ?**
-    * Do shorter or longer books result in better movies? 
-    * Should the actors that are playing a role in the movie have a big popularity? (alt : When adapting a book, which actors could be considered ? Which actors are the best at interpreting novel characters ?)
+
+
+* Do shorter or longer books result in better movies? 
+* Should the actors that are playing a role in the movie have a big popularity? (alt : When adapting a book, which actors could be considered ? Which actors are the best at interpreting novel characters ?)
+
+
 
 III) **Can we assist production companies in making strategic decisions while adapting novels into movies ?**
-    * Is it possible to predict if a movie adaptation will gain people’s heart? (alt : What is going to be the next successful book adaptation ?)
+
+
+* Is it possible to predict if a movie adaptation will gain people’s heart? (alt : What is going to be the next successful book adaptation ?)
 
 ## Proposed additional dataset :
 
