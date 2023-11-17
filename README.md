@@ -32,7 +32,7 @@ To address these inquiries, we will analyze data from the [CMU Movie Summary Cor
 
 
 * Do shorter or longer books result in better movies? 
-* When adapting a book, should the movie directors choose actors with high popularity ? Which actors are the best at interpreting novel characters ?
+* When adapting a book, should the movie directors choose actors with high popularity ?
 
 
 
@@ -55,10 +55,9 @@ The CMU movie summary corpus dataset contains about 80'000 movies with informati
 
 First of all, the team familiarized with the dataset and got to know the various features in each dataframes. This first step in our analysis allowed the team to come up with many other ideas and research questions. This lead our team to explore ideas for which the analysis would require additional data.
 
-In order to extract additional data from the internet, the Wikidata Query Service was used. The wikiID present in the given movie metadata were helpful to retrieve the wikidata page of a movie and determine wether it is based on a book or not. The Query Service was also used to feed the book dataset with various information that could be useful for our analysis. Moreover, the team decided to extract more data on the web, regarding the movies and the books ratings. From the non-commercial dataset available on the Internet Movie Database (IMDb) website was retrieved movie ratings for about 200'000 movies. In order to link this dataset to our current one, the IMDb ID (a.k.a tconst) was extracted from the wikidata pages of the movies. It was therefore easy to merge the two dataframes on this ID, allowing to feed our dataset with additional data from which we could analyse the public appreciation of each movies. Similarly, ratings and reviews of books are added to the dataset from the GoodReads website.
+In order to extract additional data from the internet, the Wikidata Query Service was used. The wikiID present in the given movie metadata were helpful to retrieve the wikidata page of a movie and determine wether it is based on a book or not. The Query Service was also used to feed the book dataset with various information that could be useful for our analysis. Moreover, the team decided to extract more data on the web, regarding the movies and the books ratings. From the non-commercial dataset available on the Internet Movie Database (IMDb) was retrieved movie ratings. In order to link this dataset to our current one, the IMDb ID (a.k.a tconst) was extracted from the wikidata pages of the movies. This allowed to feed our dataset with additional data from which we could analyse the public appreciation of each movies. Similarly, ratings and reviews of books are added to the dataset from the GoodReads website.
 
-After familiarizing with the dataset and adding it relevant data, the time of data wrangling has come for our team. This step is very important in order to avoid biased analysis. The first data wrangling action was done by analyzing the missing data of the various features of our movie metadata. It was observed that information about the box office of many old movies were missing. Carrying out analysis of the performance of movies based on their financial results could therefore not be sufficient to draw conclusions. Hopefully, we retrieved movie ratings which have far less missing data and from which we could base some analysis. 
-
+After familiarizing with the dataset and adding it relevant data, the time of data wrangling has come for our team. This step is very important to avoid biased analysis. The first data wrangling action was done by analyzing the missing data of the various features of our movie metadata. It was observed that information about the box office of many old movies were missing. Carrying out analysis of the performance of movies based on their financial results could therefore not be sufficient to draw conclusions. Hopefully, we retrieved movie ratings which have far less missing data and from which we could base some analysis. 
 
 Three distinct notebooks were created to enhance readability : two for the data collection and data wrangling, called `create_movie_dataset.ipynb` and `create_adaptation_dataset.ipynb` and one for the analysis, called `milestone2.ipynb`.
 
@@ -79,5 +78,3 @@ Mainly organized in group of two for each task
 * **Romain** : Statistical analysis, website
 * **Lucas** : Data collection, Data visualisation 
 * **Justin** : Data visualisation, Data organisation
-
-## Questions for TAs (optional) :
