@@ -78,3 +78,12 @@ Mainly organized in group of two for each task
 * **Romain** : Statistical analysis, website
 * **Lucas** : Data collection, Data visualisation 
 * **Justin** : Data visualisation, Data organisation
+
+
+## To-do :
+Mirco : linear regression movie_rating ~ book_category 
+
+Lucas : linear regression movie_rating ~ time_between_book_and_movie
+
+Romain : linear regression movie_rating ~ book_length and movie_rating ~ book_won_price 
+
