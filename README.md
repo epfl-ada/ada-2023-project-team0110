@@ -2,9 +2,7 @@
 
 # Milestone 3
 
-## Title : 
-
-**From Book to Movie : an analysis of book adaptation to the cinema industry**
+## Title : From Book to Movie : an analysis of book adaptation to the cinema industry
 
 ## Abstract : 
 
