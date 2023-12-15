@@ -1,10 +1,8 @@
 # Team0110 - ADA Project
 
-# Milestone 2
+# Milestone 3
 
-## Title : 
-
-**From Book to Movie : an analysis of book adaptation to the cinema industry**
+## From Book to Movie - An analysis of book adaptation to the cinema industry
 
 ## Abstract : 
 
@@ -12,34 +10,25 @@ Ever since the advent of cinema, filmmakers have drawn inspiration from books. F
 To address these inquiries, we will analyze data from the [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/), [TMDB](https://www.themoviedb.org), [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) and [Goodreads](https://www.kaggle.com/datasets/mdhamani/goodreads-books-100k). Our goal is to use this comprehensive analysis to develop a model that can effectively identify the most promising book for a successful film adaptation.
 
 ## Research questions :
-**Intro : Why should a movie director adapt a novel into a movie ?**
+**Intro : How do book adaptations compare to original movies?**
+* Do movies based on books perform better at the box office?
+* Are movies based on books better movies according to IMDB ratings?
 
+**I) What kind of books are turned into movies?**
+* When where the adapted books published?
+* Do books that are adapted into movies typically have higher ratings on Goodreads?
+* Do filmmakers tend to favor shorter or longer books for movie adaptations?
+* Are books that are adapted into movies typically more popular and critically acclaimed?
+* Are there certain book genres that are more suitable for movie adaptations?
+* Is it possible to predict which books will be selected for movie adaptations? If so, can we predict which books will be adapted next? 
 
-* Do movies based on books enjoy stronger box office sales?
-* How different are the audiences of book adaptation compared to original idea movies ?
+**II) What makes a commercially successful book adaptation?**
+* Is there a book genre that leads to successful adaptations?
+* Do book adaptations on book series perform better at the box office?
+* What is the ideal time frame between a book's publication and its adaptation?
+* How does the popularity of the book affect the box office revenue?
+* Can we predict the expected revenue of a future book adaptation? If so, which adaptation would perform best at the box office?
 
-
-**I) Which novels are more likely to be successful in adaptation ?**
-
-
-* Are there specific genres of novel that lend themselves more easily to cinematic adaptation? 
-* What is the ideal time frame between a book's publication and its film adaptation? 
-* How does the popularity of the author affects the success of the adaptation ?
-* Is it more advantageous to adapt a standalone book or an entire series, as was the case with Harry Potter? 
-
-
-**II) What is the best way to adapt a novel into a movie ?**
-
-
-* Do shorter or longer books result in better movies? 
-* When adapting a book, should the movie directors choose actors with high popularity ?
-
-
-
-**III) Can we assist production companies in making strategic decisions while adapting novels into movies ?**
-
-
-* Is it possible to predict if a movie adaptation will gain people’s heart? (alt : What is going to be the next successful book adaptation ?)
 
 ## Proposed additional dataset :
 
