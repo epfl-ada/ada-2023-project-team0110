@@ -12,7 +12,7 @@ To address these inquiries, we will analyze data from the [CMU Movie Summary Cor
 ## Research questions :
 **Intro : How do book adaptations compare to original movies?**
 * Do movies based on books perform better at the box office?
-* Are movies based on books better movies according to IMDB ratings?
+* Are movies based on books better, according to IMDB ratings?
 
 **I) What kind of books are turned into movies?**
 * When where the adapted books published?
@@ -20,6 +20,7 @@ To address these inquiries, we will analyze data from the [CMU Movie Summary Cor
 * Do filmmakers tend to favor shorter or longer books for movie adaptations?
 * Are books that are adapted into movies typically more popular and critically acclaimed?
 * Are there certain book genres that are more suitable for movie adaptations?
+* Is it more advantageous to adapt a standalone book or a book part of a series? 
 * Is it possible to predict which books will be selected for movie adaptations? If so, can we predict which books will be adapted next? 
 
 **II) What makes a commercially successful book adaptation?**

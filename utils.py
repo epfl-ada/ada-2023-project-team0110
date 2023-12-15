@@ -116,13 +116,15 @@ def plot_revenue_histogram(df: pd.DataFrame):
     plt.show()
 
 
-def make_book_histplot(df: pd.DataFrame, col: str, x_label: str, log=False):
+def make_book_histplot(df: pd.DataFrame, col: str, x_label: str, log=False, ylog=False):
     if log:
         df["log"] = np.log(df[col])
     fig = plt.figure(figsize=(8, 4))
     gs = gridspec.GridSpec(2, 1, height_ratios=[1, 6], hspace=0.05)
     ax0 = plt.subplot(gs[0])
     ax1 = plt.subplot(gs[1])
+    if ylog==True:
+        ax1.set_yscale('log')
     if log:
         sns.histplot(data=df, x=col, hue='label', ax=ax1, bins=50, palette=['#6a737b', '#8B0000'], log_scale=True, multiple="stack")
         sns.boxplot(data=df, x="log", y='label', ax=ax0, palette=['#6a737b', '#8B0000'], fliersize=0)
