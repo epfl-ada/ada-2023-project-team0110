@@ -10,11 +10,11 @@ Ever since the advent of cinema, filmmakers have drawn inspiration from books. F
 To address these inquiries, we will analyze data from the [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/), [TMDB](https://www.themoviedb.org), [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) and [Goodreads](https://www.kaggle.com/datasets/mdhamani/goodreads-books-100k). Our goal is to use this comprehensive analysis to develop a model that can effectively identify the most promising book for a successful film adaptation.
 
 ## Research questions :
-**Intro : How do book adaptations compare to original movies?**
+**I) How do book adaptations compare to original movies?**
 * Do movies based on books perform better at the box office?
 * Are movies based on books better, according to IMDB ratings?
 
-**I) What kind of books are turned into movies?**
+**II) What kind of books are turned into movies?**
 * When where the adapted books published?
 * Do books that are adapted into movies typically have higher ratings on Goodreads?
 * Do filmmakers tend to favor shorter or longer books for movie adaptations?
@@ -23,7 +23,7 @@ To address these inquiries, we will analyze data from the [CMU Movie Summary Cor
 * Is it more advantageous to adapt a standalone book or a book part of a series? 
 * Is it possible to predict which books will be selected for movie adaptations? If so, can we predict which books will be adapted next? 
 
-**II) What makes a commercially successful book adaptation?**
+**III) What makes a commercially successful book adaptation?**
 * Is there a book genre that leads to successful adaptations?
 * Do book adaptations on book series perform better at the box office?
 * What is the ideal time frame between a book's publication and its adaptation?
@@ -122,10 +122,11 @@ Mainly organized in group of two for each task
 * **Justin** : Data visualisation, Data organisation
 
 
-## To-do :
+<!-- ## To-do :
 Mirco : linear regression movie_rating ~ book_category 
 
 Lucas : linear regression movie_rating ~ time_between_book_and_movie
 
-Romain : linear regression movie_rating ~ book_length and movie_rating ~ book_won_price 
+Romain : linear regression movie_rating ~ book_length and movie_rating ~ book_won_price  -->
+
 
