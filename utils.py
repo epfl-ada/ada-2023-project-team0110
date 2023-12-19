@@ -115,6 +115,39 @@ def plot_revenue_histogram(df: pd.DataFrame):
     plt.savefig(f"assets/revenue_histogram.pdf", bbox_inches="tight")
     plt.show()
 
+def make_book_histplot_no_stack(df: pd.DataFrame, col: str, x_label: str, log=False, ylog=False):
+    if log:
+        df["log"] = np.log(df[col])
+    fig = plt.figure(figsize=(8, 4))
+    gs = gridspec.GridSpec(2, 1, height_ratios=[1, 6], hspace=0.05)
+    ax0 = plt.subplot(gs[0])
+    ax1 = plt.subplot(gs[1])
+    if ylog==True:
+        ax1.set_yscale('log')
+    if log:
+        sns.histplot(data=df, x=col, hue='label', ax=ax1, bins=50, palette=['#6a737b', '#8B0000'], log_scale=True)
+        sns.boxplot(data=df, x="log", y='label', ax=ax0, palette=['#6a737b', '#8B0000'], fliersize=0)
+    else:
+        sns.histplot(data=df, x=col, hue='label', ax=ax1, bins=50, palette=['#6a737b', '#8B0000'])
+        sns.boxplot(data=df, x=col, y='label', ax=ax0, palette=['#6a737b', '#8B0000'], fliersize=0)
+
+    ax0.set(xlabel="", ylabel="")
+    ax0.set(xticklabels=[], yticklabels=[])
+    ax0.set(xticks=[], yticks=[])
+    ax0.spines["top"].set_visible(False)
+    ax0.spines["bottom"].set_visible(False)
+    ax0.spines["right"].set_visible(False)
+    ax0.spines["left"].set_visible(False)
+
+    ax1.set(xlabel=x_label, ylabel="Number of Books")
+    ax1.spines["top"].set_visible(False)
+    ax1.spines["right"].set_visible(False)
+    ax1.get_legend().set_title("")
+    ax1.get_legend()._legend_box.align = "left"
+
+    plt.savefig(f"assets/{col}_histogram.pdf", bbox_inches="tight")
+    plt.show()
+
 
 def make_book_histplot(df: pd.DataFrame, col: str, x_label: str, log=False, ylog=False):
     if log:
@@ -159,6 +192,34 @@ def make_book_revenue_histplot(df: pd.DataFrame, col: str, labels: list):
     ax1 = plt.subplot(gs[1])
     
     sns.histplot(data=df, x='movie_revenue', hue='label', ax=ax1, bins=50, palette=['#6a737b', '#8B0000'], log_scale=True, multiple="stack")
+    sns.boxplot(data=df, x="movie_revenue_log", y='label', ax=ax0, palette=['#6a737b', '#8B0000'], fliersize=0)
+
+    ax0.set(xlabel="", ylabel="")
+    ax0.set(xticklabels=[], yticklabels=[])
+    ax0.set(xticks=[], yticks=[])
+    ax0.spines["top"].set_visible(False)
+    ax0.spines["bottom"].set_visible(False)
+    ax0.spines["right"].set_visible(False)
+    ax0.spines["left"].set_visible(False)
+
+    ax1.set(xlabel="Box Office Revenue", ylabel="Number of Books Adaptations")
+    ax1.spines["top"].set_visible(False)
+    ax1.spines["right"].set_visible(False)
+    ax1.get_legend().set_title("")
+    ax1.get_legend()._legend_box.align = "left"
+
+    plt.savefig(f"assets/{col}_histogram.pdf", bbox_inches="tight")
+    plt.show()
+
+def make_book_revenue_histplot_no_stacking(df: pd.DataFrame, col: str, labels: list):
+    df = df.assign(label= lambda x: x[col].map({1: labels[0], 0: labels[1]}))
+
+    fig = plt.figure(figsize=(8, 4))
+    gs = gridspec.GridSpec(2, 1, height_ratios=[1, 6], hspace=0.05)
+    ax0 = plt.subplot(gs[0])
+    ax1 = plt.subplot(gs[1])
+    
+    sns.histplot(data=df, x='movie_revenue', hue='label', ax=ax1, bins=20, palette=['#6a737b', '#8B0000'], log_scale=True)
     sns.boxplot(data=df, x="movie_revenue_log", y='label', ax=ax0, palette=['#6a737b', '#8B0000'], fliersize=0)
 
     ax0.set(xlabel="", ylabel="")
