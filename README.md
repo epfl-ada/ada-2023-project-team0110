@@ -27,7 +27,6 @@ To address these inquiries, we will analyze data from the [CMU Movie Summary Cor
 * Is there a book genre that leads to successful adaptations?
 * Do book adaptations on book series perform better at the box office?
 * What is the ideal time frame between a book's publication and its adaptation?
-* How does the popularity of the book affect the box office revenue?
 * Can we predict the expected revenue of a future book adaptation? If so, which adaptation would perform best at the box office?
 
 
