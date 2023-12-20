@@ -238,3 +238,31 @@ def make_book_revenue_histplot_no_stacking(df: pd.DataFrame, col: str, labels: l
 
     plt.savefig(f"assets/{col}_histogram.pdf", bbox_inches="tight")
     plt.show()
+    
+def make_movie_rating_histplot_no_stacking(df: pd.DataFrame, col: str, labels: list):
+    df = df.assign(label= lambda x: x[col].map({1: labels[0], 0: labels[1]}))
+
+    fig = plt.figure(figsize=(8, 4))
+    gs = gridspec.GridSpec(2, 1, height_ratios=[1, 6], hspace=0.05)
+    ax0 = plt.subplot(gs[0])
+    ax1 = plt.subplot(gs[1])
+    
+    sns.histplot(data=df, x='imdb_rating', hue='label', ax=ax1, bins=20, palette=['#6a737b', '#8B0000'], log_scale=False)
+    sns.boxplot(data=df, x="imdb_rating", y='label', ax=ax0, palette=['#6a737b', '#8B0000'], fliersize=0)
+
+    ax0.set(xlabel="", ylabel="")
+    ax0.set(xticklabels=[], yticklabels=[])
+    ax0.set(xticks=[], yticks=[])
+    ax0.spines["top"].set_visible(False)
+    ax0.spines["bottom"].set_visible(False)
+    ax0.spines["right"].set_visible(False)
+    ax0.spines["left"].set_visible(False)
+
+    ax1.set(xlabel="Movie rating", ylabel="Number of Books Adaptations")
+    ax1.spines["top"].set_visible(False)
+    ax1.spines["right"].set_visible(False)
+    ax1.get_legend().set_title("")
+    ax1.get_legend()._legend_box.align = "left"
+
+    plt.savefig(f"assets/{col}_histogram.pdf", bbox_inches="tight")
+    plt.show()
