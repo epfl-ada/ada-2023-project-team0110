@@ -20,7 +20,7 @@ To address these inquiries, we will analyze data from the [CMU Movie Summary Cor
 * Do filmmakers tend to favor shorter or longer books for movie adaptations?
 * Are books that are adapted into movies typically more popular and critically acclaimed?
 * Are there certain book genres that are more suitable for movie adaptations?
-* Is it more advantageous to adapt a standalone book or a book part of a series? 
+* Are books part of a series more suitable for movie adaptations than standalone books ? 
 * Is it possible to predict which books will be selected for movie adaptations? If so, can we predict which books will be adapted next? 
 
 **III) What makes a commercially successful book adaptation?**
