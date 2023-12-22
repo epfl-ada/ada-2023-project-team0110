@@ -80,7 +80,7 @@ To deal with missing values we decided to use a `Imputer` that filled them with 
 **Predicting commercial success of a movie.**
 First, we analyzed how various predictors influence revenue. To quantify the linear relationship between a continuous variable and the dependent variable, we employed the `Pearson correlation coefficient`, also reporting the respective p-values.
 
-We opted for a simple `linear regression` model to predict revenue, selecting this predictor due to its enhanced explainability.
+We opted for a simple `ridge regression` model to predict revenue, selecting this predictor due to its enhanced explainability.
 
 ## Setup 
 Create a virtual environment:
